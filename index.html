@@ -43,7 +43,7 @@
       font-weight: 800; font-size: 1.1rem; letter-spacing: -0.02em;
     }
     .nav-logo span { color: var(--accent1); }
-    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
     .nav-links a {
       font-size: 0.85rem; font-weight: 500; color: var(--ink);
       text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase;
@@ -322,6 +322,35 @@
     .social-name { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700; font-size: 0.9rem; }
     .social-handle { font-size: 0.75rem; opacity: 0.5; }
 
+    /* ── INFLUENCER PAGES ── */
+    #influencers { background: var(--surface); }
+    .influencer-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .influencer-card {
+      padding: 30px 28px; border-radius: 20px;
+      background: var(--bg); border: 2px solid var(--border);
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .influencer-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent3);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    }
+    .influencer-kicker {
+      font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--accent3); margin-bottom: 12px;
+    }
+    .influencer-title {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 1.2rem; font-weight: 800; margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .influencer-desc { font-size: 0.85rem; line-height: 1.6; color: #666; margin-bottom: 18px; }
+    .influencer-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .itag {
+      font-size: 0.72rem; font-weight: 700; padding: 4px 10px;
+      border-radius: 100px; background: #fff; color: var(--muted);
+    }
+
     /* ── PORTFOLIO ── */
     #portfolio { background: var(--bg); }
     .portfolio-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
@@ -356,6 +385,7 @@
     @media (max-width: 900px) {
       .social-grid { grid-template-columns: repeat(2,1fr); }
       .portfolio-grid { grid-template-columns: 1fr; }
+      .influencer-grid { grid-template-columns: 1fr; }
       #social { padding: 72px 24px; }
     }
     #contact { background: var(--surface); text-align: center; }
@@ -414,6 +444,7 @@
     <li><a href="#services">Services</a></li>
     <li><a href="#portfolio">Works</a></li>
     <li><a href="#social">Social</a></li>
+    <li><a href="#influencers">Influencers</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -786,6 +817,47 @@
       <div class="social-handle">Udana Anjana</div>
     </a>
 
+  </div>
+</section>
+
+<!-- INFLUENCER PAGES -->
+<section id="influencers">
+  <div class="section-eyebrow">Influencer Pages</div>
+  <h2 class="section-title">Creator & Public Figure Pages I Handle</h2>
+  <p class="section-sub">Social media pages for well-known influencers and public personalities, managed with consistent content, audience care, and growth-focused execution.</p>
+  <div class="influencer-grid">
+    <div class="influencer-card">
+      <div class="influencer-kicker">Page Management</div>
+      <div class="influencer-title">Influencer Social Media Pages</div>
+      <div class="influencer-desc">Daily publishing, page optimisation, caption writing, inbox coordination, and community engagement for creator-led audiences.</div>
+      <div class="influencer-tags">
+        <span class="itag">Instagram</span>
+        <span class="itag">Facebook</span>
+        <span class="itag">TikTok</span>
+      </div>
+    </div>
+
+    <div class="influencer-card">
+      <div class="influencer-kicker">Content Systems</div>
+      <div class="influencer-title">Campaigns, Reels & Short-Form Content</div>
+      <div class="influencer-desc">Planning and coordinating creator content calendars, trend-based reels, promotional posts, and brand collaboration assets.</div>
+      <div class="influencer-tags">
+        <span class="itag">Reels</span>
+        <span class="itag">Stories</span>
+        <span class="itag">Campaigns</span>
+      </div>
+    </div>
+
+    <div class="influencer-card">
+      <div class="influencer-kicker">Growth Support</div>
+      <div class="influencer-title">Audience Growth & Reputation Care</div>
+      <div class="influencer-desc">Analytics review, engagement strategy, comment moderation, and creator-brand positioning for high-visibility social pages.</div>
+      <div class="influencer-tags">
+        <span class="itag">Analytics</span>
+        <span class="itag">Engagement</span>
+        <span class="itag">Brand Care</span>
+      </div>
+    </div>
   </div>
 </section>
 
