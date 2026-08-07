@@ -1,0 +1,12 @@
+{
+  "liveServer.settings.port": 5500,
+  "editor.formatOnSave": false,
+  "files.associations": { "*.html": "html" },
+  "html.format.wrapLineLength": 0,
+  "search.exclude": {
+    "**/assets/**": true
+  },
+  "files.watcherExclude": {
+    "**/assets/**": true
+  }
+}

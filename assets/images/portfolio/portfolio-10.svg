@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750">
+  <defs>
+    <linearGradient id="bg10" x1="0" y1="0" x2="1000" y2="750" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1620"/>
+      <stop offset="1" stop-color="#010d16"/>
+    </linearGradient>
+    <radialGradient id="glow10" cx="0.62" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#139bfd" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#139bfd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="750" fill="url(#bg10)"/>
+  <rect width="1000" height="750" fill="url(#glow10)"/>
+
+  <!-- faint scan grid -->
+  <g stroke="#1c3a4d" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="150" x2="1000" y2="150"/>
+    <line x1="0" y1="300" x2="1000" y2="300"/>
+    <line x1="0" y1="450" x2="1000" y2="450"/>
+    <line x1="0" y1="600" x2="1000" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="750"/>
+    <line x1="400" y1="0" x2="400" y2="750"/>
+    <line x1="600" y1="0" x2="600" y2="750"/>
+    <line x1="800" y1="0" x2="800" y2="750"/>
+  </g>
+
+  <!-- abstract scan silhouette -->
+  <ellipse cx="430" cy="400" rx="230" ry="190" fill="none" stroke="#2b4a5e" stroke-width="2" opacity="0.8"/>
+  <ellipse cx="430" cy="400" rx="150" ry="120" fill="none" stroke="#2b4a5e" stroke-width="1.5" opacity="0.6"/>
+  <path d="M300 320 Q430 260 560 320 Q600 400 560 480 Q430 540 300 480 Q260 400 300 320 Z" fill="#139bfd" opacity="0.06"/>
+
+  <!-- detection bounding box -->
+  <g stroke="#139bfd" stroke-width="3" fill="none">
+    <path d="M540 300 v-30 h30"/>
+    <path d="M680 300 v-30 h-30"/>
+    <path d="M540 480 v30 h30"/>
+    <path d="M680 480 v30 h-30"/>
+  </g>
+  <rect x="540" y="300" width="140" height="180" fill="#139bfd" opacity="0.08" stroke="#139bfd" stroke-width="1" stroke-dasharray="4 4"/>
+  <circle cx="610" cy="380" r="10" fill="#ff6a6a" opacity="0.85"/>
+  <circle cx="610" cy="380" r="22" fill="none" stroke="#ff6a6a" stroke-width="2" opacity="0.5"/>
+
+  <!-- confidence label -->
+  <rect x="700" y="270" width="130" height="40" rx="6" fill="#0b1620" stroke="#139bfd" stroke-width="1"/>
+  <text x="765" y="296" font-family="Arial, sans-serif" font-size="16" fill="#139bfd" text-anchor="middle" font-weight="600">97.4%</text>
+
+  <!-- heartbeat / vitals line motif -->
+  <polyline points="60,650 220,650 250,600 290,690 320,620 360,650 940,650" fill="none" stroke="#3ddc84" stroke-width="2.5" opacity="0.75"/>
+
+  <!-- label -->
+  <text x="60" y="90" font-family="Arial, sans-serif" font-size="30" fill="#e7f6ff" font-weight="700">AI Screening Concept</text>
+  <text x="60" y="122" font-family="Arial, sans-serif" font-size="17" fill="#7fa8bd">Mammogram lesion detection</text>
+</svg>

@@ -1,0 +1,13 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor
+*.code-workspace
+
+# Node (only if you add tooling later)
+node_modules/
+
+# Keep assets/ committed — the site needs it to deploy.
+# The repo MUST stay private: committing ThemeForest template
+# source to a public repo breaches the licence.
